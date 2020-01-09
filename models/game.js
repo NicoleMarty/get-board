@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/test', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost/explore-games', { useNewUrlParser: true })
 const Schema = mongoose.Schema
 
 const gameSchema = new Schema({
