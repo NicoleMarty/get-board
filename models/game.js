@@ -1,5 +1,7 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb://localhost/explore-games', { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/gamesdb', {
+  useNewUrlParser: true
+})
 const Schema = mongoose.Schema
 
 const gameSchema = new Schema({
