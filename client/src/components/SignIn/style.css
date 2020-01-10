@@ -6,6 +6,15 @@
   padding-bottom: 1rem;
 }
 
+#passwordInput {
+  color: white;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: white;
+  box-shadow: 0 1px 0 0 #ffffff;
+}
 .sign-in-form {
   text-align: left;
 }
